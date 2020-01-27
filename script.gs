@@ -25,9 +25,9 @@ function myFunction(e) {
   var q19a = e.values[23];
   var q19b = e.values[24];
   
-  var file = DriveApp.getFileById('12MUBLlafaMISCdUIwwMdsZyQ_iamK6AmjfW2droX10k'); 
+  var file = DriveApp.getFileById('12MUBLlafaMISCdUIwwMdsZyQ_iamK6AmjfW2droX10k');    //'sample doc' id
   
-  var folder = DriveApp.getFolderById('1b2seej1Now7_5Z3yM-fQg021kIBx_Jai')
+  var folder = DriveApp.getFolderById('1b2seej1Now7_5Z3yM-fQg021kIBx_Jai')     //destination folder id
   var copy = file.makeCopy('Response', folder); 
   
   var doc = DocumentApp.openById(copy.getId()); 
